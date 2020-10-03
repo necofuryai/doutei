@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>童貞時計</title>
+  <meta http-equiv="content-language" content="ja-jp">
+  <meta name="description" content="ねこふりゃい。の童貞歴をリアルタイムに知ることができる世界で唯一の画期的なWEBサービス！">
+  <meta name="author" content="necofuryai">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="ねこふりゃい。の童貞歴をリアルタイムに知ることができる世界で唯一の画期的なWEBサービス！">
+  <meta property="og:title" content="童貞時計">
+  <meta property="og:image" content="https://doutei.web.app/images/doutei_logo.png">
+  <meta property="og:site_name" content="童貞時計">
+  <meta property="og:url" content="https://doutei.web.app/">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@necofuryai">
+  <meta name="twitter:description" content="ねこふりゃい。の童貞歴をリアルタイムに知ることができる世界で唯一の画期的なWEBサービス！">
+  <meta name="twitter:title" content="童貞時計">
+  <meta name="twitter:url" content="https://doutei.web.app/">
+  <meta name="twitter:image" content="https://doutei.web.app/images/doutei_logo.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,500,900&amp;subset=japanese" rel="stylesheet">
+  <link rel="canonical" href="https://doutei.web.app/">
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- Favicons -->
+  <meta name="msapplication-square70x70logo" content="./site-tile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="./site-tile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="./site-tile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="./site-tile-310x310.png">
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href=".apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="./android-chrome-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./android-chrome-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="./android-chrome-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./android-chrome-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="./android-chrome-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="./android-chrome-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="./android-chrome-152x152.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="./android-chrome-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="./android-chrome-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="./icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="./icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="./icon-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="./icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="./icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="./icon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="./icon-196x196.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="./icon-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="./icon-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="24x24" href="./icon-24x24.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icon-32x32.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      
+        "@type": "Person",
+        "name": "necofuryai",
+        "url": "https://doutei.web.app/"
+      
+    }
+  </script>
+  <!-- update the version number as needed -->
+  <script src="/__/firebase/7.17.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script src="/__/firebase/7.17.2/firebase-database.js"></script>
+  <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+
+  <script type="text/javascript">
+    function doutei_func() {
+      var year = "1992";
+      var month = 9;
+      var day = 22;
+      var hour = 0;
+      var min = 0;
+
+      var str_first = "<h1>ねこふりゃい。が童貞になってから<br>";
+      var str_end = " が経ちました。";
+
+      if (year.match(/^\d{4}$/) && month <= 12 && day <= 31 && hour <= 23 && min <= 59) {
+        var now = new Date().getTime() / 1000;						// 現在の時間（秒）
+        var set = new Date(year, month - 1, day, hour, min, 0).getTime() / 1000;	// 入力された時間（秒）
+
+        var remain = Math.round(now - set);						// 差時間を取得（秒）
+        if (remain <= 0) {
+          str_first = "指定した日時まであと ";			// 入力された値が未来の時間ならば
+          str_end = " です。</h1><br>";					// 入力された値から現在の値を引く
+          remain = Math.round(set - now);
+        }
+        var result_year = Math.floor(remain / (60 * 60 * 24 * 365));		// 1年: 31536000秒
+
+        remain -= result_year * 60 * 60 * 24 * 365;
+        var result_month = Math.floor(remain / (60 * 60 * 24 * 30));		// 1ヶ月: 2592000秒
+
+        remain -= result_month * 60 * 60 * 24 * 30;
+        var result_day = Math.floor(remain / (60 * 60 * 24));			// 1日: 86400秒
+
+        remain -= result_day * 60 * 60 * 24;
+        var result_hour = Math.floor(remain / (60 * 60));			// 1時間: 3600秒
+
+        remain -= result_hour * 60 * 60;
+        var result_min = Math.floor(remain / 60);				// 1分: 60秒
+
+        remain -= result_min * 60;
+        var result_sec = Math.floor(remain);
+
+        document.getElementById("doutei_countup").innerHTML = 
+          str_first + result_year + "年" + result_month + "ヶ月" + result_day + "日 " +
+          result_hour + "時間" + result_min + "分" + result_sec + "秒" + str_end;
+
+        // setTimeout("countTimer();", 1000);
+      }
+      else {
+        return;
+      }
+    
+    // <!--
+      var setyear = 2022;
+      var setmonth = 9;
+      var setday = 22;
+      var sethour = 0;
+      var setmin = 0;
+      
+      var set = new Date(setyear, setmonth - 1, setday, sethour, setmin, 0).getTime() / 1000;
+
+      var now = new Date().getTime() / 1000;
+      var remain = Math.round(set - now);
+    
+      var result_year = Math.floor(remain / (60 * 60 * 24 * 365));
+    
+      remain -= result_year * 60 * 60 * 24 * 365;
+      var result_month = Math.floor(remain / (60 * 60 * 24 * 30));
+    
+      remain -= result_month * 60 * 60 * 24 * 30;
+      var result_day = Math.floor(remain / (60 * 60 * 24));
+    
+      remain -= result_day * 60 * 60 * 24;
+      var result_hour = Math.floor(remain / (60 * 60));
+    
+      remain -= result_hour * 60 * 60;
+      var result_min = Math.floor(remain / 60);
+    
+      remain -= result_min * 60;
+      var result_sec = Math.floor(remain);
+    
+      if (result_hour < 10) result_hour = "0" + result_hour;
+      if (result_min < 10) result_min = "0" + result_min;
+      if (result_sec < 10) result_sec = "0" + result_sec;
+    
+      document.getElementById("doutei_countdown").innerHTML = "<br><h1>魔法使いになるまであと<br>" +
+        result_year + "年" + result_month + "ヶ月" + result_day + "日 " +
+        result_hour + "時間" + result_min + "分" + result_sec + "秒 です。</h1>";
+    
+      var stop = setTimeout("doutei_func();", 1000);
+    
+      // カウントダウン終了時の処理
+      if (set < now) {
+        clearTimeout(stop);
+    
+        // location.replace("./new.html");
+      }
+    }
+    
+    window.onload = doutei_func;
+    // -->
+    </script>
+  <meta name="google-site-verification" content="A9mNueL-mCCe8TTpZ2DQwuUHop6ycgv7Kmc5y-kk9Kc" />
+</head>
+
+<body>
+  <main id="doutei">
+    <div id="doutei_header">
+      <h1>『童貞時計』</h1>
+    </div>
+    <div id="doutei_countup"></div>
+    <div id="doutei_countdown"></div>
+    <br>
+
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="童貞時計" data-related="necofuryai" data-size="large" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    <ul class="sns sns_horizon">
+      <li class="sns_horizon--hatebu">
+        <a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+    </ul>
+
+    <div id="doutei_licenses">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス"
+          style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><a
+        xmlns:cc="http://creativecommons.org/ns#" href="https://necofuryai.web.app" property="cc:attributionName"
+        rel="cc:attributionURL">ねこふりゃい。</a> 作『<span xmlns:dct="http://purl.org/dc/terms/"
+        property="dct:title">童貞時計</span>』は<a rel="license"
+        href="http://creativecommons.org/licenses/by-nc-nd/4.0/">クリエイティブ・コモンズ 表示 - 非営利 - 改変禁止 4.0 国際 ライセンス</a>で提供されています。
+      <br>All codes are licensed under the <a href="https://opensource.org/licenses/MIT" rel="license">MIT License</a>.
+    </div>
+    <br>
+    <div id="doutei_footer">
+      © 2020 necofuryai
+    </div>
+  </main>
+</body>
+<!--
+############　WEBエンジニアの皆様方へ　############
+お仕事お疲れ様です。
+当サイトのソースコードでおかしな点、冗長な点及び、脆弱性が疑われる点をご指摘いただければ幸いです。
+Twitter @necofuryaiまでよろしくお願い致します。
+普段はバックの処理を書くことが殆どですので、WEB系エンジニアの方々の知見は本当にありがたいです。
+
+どうていのみんな〜元気してる？
+ねこふりゃい。と一緒に楽しく元気にどうていライフを送ろうね！
+@necofuryai
+
+最終更新：2020/08/15
+-->
+</html>
